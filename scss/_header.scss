@@ -1,0 +1,23 @@
+.masthead{
+	background: url(../img/saddle.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;    
+    height: 500px;
+    margin-bottom: 40px;
+}
+
+.page-header{
+    margin-top: 0px;
+    small{
+        color: $orange;
+    }
+}
+
+@media only screen and (max-width: $breakpoint-medium) {
+    .masthead{
+        height: 250px;
+    }
+}
+

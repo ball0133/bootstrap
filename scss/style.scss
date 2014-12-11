@@ -1,0 +1,117 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Main Stylesheet
+******************************************************************/
+
+/* = Variables 
+-------------------------------------------------------------------------------------------------------------------- */
+@import "variables";
+
+
+/* = Mixins 
+-------------------------------------------------------------------------------------------------------------------- */
+@import "mixins";
+
+
+
+
+
+
+/* = Grid
+-------------------------------------------------------------------------------------------------------------------- */
+@import 'grid';
+
+
+/* = Header
+-------------------------------------------------------------------------------------------------------------------- */
+@import 'header';
+
+
+/* = Main Navigation
+-------------------------------------------------------------------------------------------------------------------- */
+@import 'main-navigation';
+
+
+/* = Footer
+-------------------------------------------------------------------------------------------------------------------- */
+@import 'footer';
+
+/* = Footer
+-------------------------------------------------------------------------------------------------------------------- */
+@import 'buttons';
+
+
+body{
+    color: $gray;
+    margin: 0 0 300px;
+    margin: 0 0 250px; /* bottom = footer height */
+}
+html{
+    position: relative;
+    min-height: 100%;    
+}
+h2{
+    padding-bottom: 20px;
+}
+.para{
+    padding-top: 20px;
+}
+
+.info{
+    margin-top: 27px;
+}
+
+h3{
+    width: 88px;
+    border-bottom: 2px solid $gray;
+}
+h4{
+    font-size: 1em;
+    font-weight: 600;
+}
+.stats{
+    font-weight: 400;
+}
+table{
+    margin-top: 30px;
+    font-size: .95em;
+    font-weight: 400;
+}
+.table > thead > tr > th{
+    border-bottom: 2px solid $orange;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+    border-top: $lightgray;
+}
+th{
+    color: $brown;
+    letter-spacing: .5px;
+    font-weight: 500;
+}
+hr{
+    color: $orange;
+    background-color: $orange;
+    height: 1px;
+    border: none;
+    margin-bottom: 35px;
+}
+img { 
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.col-6{
+    
+    
+}
+ul > li:nth-child(2){
+    padding-right: -10px;
+}
+@media only screen and (max-width: $breakpoint-large) {
+    h2{
+        padding-bottom: 10px;
+    }
+}

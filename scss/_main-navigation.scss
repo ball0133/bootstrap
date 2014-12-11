@@ -1,0 +1,67 @@
+.navbar {
+    margin-bottom: 0;
+    li:nth-child(-n+2){
+        &:hover{
+            background-color: $orange; 
+            @include transition(0.2s);
+        }    
+    }
+}
+.navbar-default .navbar-nav > li > a{
+        &:hover{
+            color: $white;
+            text-shadow: none;
+            @include transition(0.2s);
+        } 
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .active > a {
+    background-color: $white;
+    background-image: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-top: 2px solid $orange;
+    color: $orange;
+    &:hover{
+        background-color: $white;
+        color: $orange;
+    }
+}
+.navbar-default {
+    background-color: $white;
+    background-image: none;
+    border-radius: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid $white;  
+}
+.navbar-default a{
+    border-top: 2px solid transparent;
+}
+a,
+a:visited,
+a:hover, a:focus{
+    text-decoration: none;
+    color: $white;
+}
+@media only screen and (max-width: $breakpoint-medium) {
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .active > a {
+        background-color: $white;
+        background-image: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-top: none;
+        color: $orange;
+        &:hover{
+            background-color: $orange;
+            color: $white;
+        }
+    }
+
+    .navbar {
+        li{
+        text-align: center;
+        }
+    }
+}

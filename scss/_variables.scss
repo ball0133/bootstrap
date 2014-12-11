@@ -1,0 +1,24 @@
+$base-font-size     : 1em;
+$base-text-color    : #000000;
+$base-link-color    : #000000;
+$base-hdr-color     : #000000;
+$base-line-height   : 1.3;
+
+/* Breakpoints */
+$breakpoint-small : 450px;
+$breakpoint-medium : 768px;
+$breakpoint-large : 1027px; 
+
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700);
+
+// Font Variables
+$font-primary: Georgia, serif;
+$alegreya: 'Alegreya Sans', sans-serif;
+
+/* Colours */
+$orange: #FFBC67;
+$gray: #636266;
+$lightgray: #EFEBE8;
+$white: #ffffff;
+$brown: #A69580;

@@ -1,0 +1,51 @@
+.label{
+    background-color: transparent;
+    border: 1px solid $orange;
+    color: $gray;
+    padding: 8px 10px;
+    font-size: $base-font-size;
+    font-weight: 400;
+    &:hover{
+        background-color: $orange;
+        @include transition(0.2s);
+        color: $white;
+    }
+}
+.active-2{
+    .label{
+        background-color: $orange;
+        color: $white;
+    }
+}
+.label-default{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin: 50px auto 40px;
+    width: 100px;
+}
+.label-3{
+    margin: 50px auto -90px;
+}
+#button1id, #button2id{
+    @extend .label;
+    width: 100%;
+    margin: 0;
+}
+.col-btn{
+    padding-right: 8px;
+}
+
+@media only screen and (max-width: $breakpoint-medium) {
+    .label-default-2{
+        width: 50%;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+@media only screen and (max-width: $breakpoint-large) {
+    .col-btn{
+        padding-right: 0px;
+    }
+}
